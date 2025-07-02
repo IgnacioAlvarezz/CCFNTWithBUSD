@@ -1,0 +1,14 @@
+[profile.default]
+src = 'src'
+out = 'out'
+libs = ['lib']
+
+remappings = [
+    "@openzeppelin/=lib/openzeppelin-contracts/",
+    "@foundry-devops/=lib/foundry-devops/src/",
+]
+
+# Configuración para pruebas
+test = 'test'
+cache_path = 'cache_fork' # Ruta para el caché de pruebas
+fs_permissions = [{ access = "read", path = "./"}]
